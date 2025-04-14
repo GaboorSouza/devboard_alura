@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 10px;
+}
+
+.devboard__main{
+    display: flex;
+    justify-content: center;
+    margin: 10% 15%;
+    border-radius: 8px;
+}
+
+.devboar__card {
+    background-color: rgb(255, 0, 0);
+    background-image:
+      linear-gradient(
+        to right, 
+        #005C53, 
+        #042940, 
+        #D6D58E, 
+        #DBF227
+      );
+    width: 360px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 0px #00000042;
+}
+
+.devboard__card__conteudo {
+    background-color: #000000;
+    border: #F6F6F6 solid 1px;
+    width: 346px;
+    height: 502px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.devboard__card__conteudo__foto {
+    width: 336px;
+    height: auto;
+    border: #F6F6F6 solid 1px;
+    border-radius: 8px 8px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 6px;
+}
+
+.devboard__card__conteudo__nome {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.devboard__card__conteudo__localizacao {
+    color: #DBF227;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.devboard__card__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 161px;
+    gap: 8px;
+}
+
+.devboard__card__conteudo__links__gif{
+    width: 15%;
+}
+
+.logo__github {
+    width: 10%;
+}
+
+.devboard__card__conteudo__links__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #daf2278a;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #daf2275d;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.devboard__card__conteudo__links__redes:hover {
+    border: 2px solid #DBF227;
+    background-color: #8f8f8f3d;
+    transition: 0.4s;
+    color: #DBF227;
+}
