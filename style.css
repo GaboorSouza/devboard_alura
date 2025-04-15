@@ -13,7 +13,7 @@ body{
 }
 
 p {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .devboard__main{
@@ -55,7 +55,7 @@ p {
 }
 
 .devboard__card__conteudo__foto {
-    width: 336px;
+    width: 330px;
     height: auto;
     border: #F6F6F6 solid 1px;
     border-radius: 8px 8px 0px 0px;
@@ -105,15 +105,23 @@ p {
     text-align: center;
     border-radius: 8px;
     padding: 8px 0;
-    text-decoration: none;
-    color: #daf2275d;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.devboard__card__conteudo__links__link {
+    text-decoration: none;
+    color: #daf2275d;
+}
+
+.devboard__card__conteudo__links__link:hover {
+    transition: 0.4s;
+    color: #DBF227;
 }
 
 .devboard__card__conteudo__links__redes:hover {
-    border: 2px solid #DBF227;
-    background-color: #8f8f8f3d;
     transition: 0.4s;
-    color: #DBF227;
+    background-color: #8f8f8f3d;
 }
