@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    --cor-primaria: #F6F6F6;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #D6D58E;
+    --cor-quaternaria: #DBF227;
+    --cor-quaternaria-2: #005C53;
+    --cor-quaternaria-3: #042940;
+    --cor-quaternaria-4: #D6D58E;
+    --cor-links: #daf2278a;
+    --cor-links-hover: #8f8f8f3d;
+    --cor-box-shadow: #00000042;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +21,7 @@
 body{
     height: 100vh;
     box-sizing: border-box;
-    color: #F6F6F6;
+    color: var(--cor-primaria);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,15 +36,14 @@ p {
     border-radius: 8px;
 }
 
-.devboar__card {
-    background-color: rgb(255, 0, 0);
+.cartao-gabriel-souza {
     background-image:
       linear-gradient(
         to right, 
-        #005C53, 
-        #042940, 
-        #D6D58E, 
-        #DBF227
+        var(--cor-quaternaria-2),
+        var(--cor-quaternaria-3),
+        var(--cor-quaternaria-4), 
+        var(--cor-quaternaria)
       );
     width: 360px;
     height: 520px;
@@ -39,12 +51,12 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 10px 10px 10px 0px #00000042;
+    box-shadow: 10px 10px 10px 0px var(--cor-box-shadow);
 }
 
 .devboard__card__conteudo {
-    background-color: #000000;
-    border: #F6F6F6 solid 1px;
+    background-color: var(--cor-secundaria);
+    border: var(--cor-primaria) solid 1px;
     width: 346px;
     height: 502px;
     display: flex;
@@ -57,7 +69,7 @@ p {
 .devboard__card__conteudo__foto {
     width: 330px;
     height: auto;
-    border: #F6F6F6 solid 1px;
+    border: var(--cor-primaria) solid 1px;
     border-radius: 8px 8px 0px 0px;
     background-size: cover;
     background-position: center;
@@ -73,7 +85,7 @@ p {
 }
 
 .devboard__card__conteudo__localizacao {
-    color: #DBF227;
+    color: var(--cor-quaternaria)    ;
     font-size: 12px;
     font-weight: 600;
 }
@@ -100,7 +112,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #daf2278a;
+    border: 2px solid var(--cor-links);
     width: 200px;
     text-align: center;
     border-radius: 8px;
@@ -113,15 +125,15 @@ p {
 
 .devboard__card__conteudo__links__link {
     text-decoration: none;
-    color: #daf2275d;
+    color: var(--cor-links);
 }
 
 .devboard__card__conteudo__links__link:hover {
     transition: 0.4s;
-    color: #DBF227;
+    color: var(--cor-quaternaria);
 }
 
 .devboard__card__conteudo__links__redes:hover {
     transition: 0.4s;
-    background-color: #8f8f8f3d;
+    background-color: var(--cor-links-hover);
 }
